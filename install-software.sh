@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# TO-DO: search for brew packages or write install scripts
+# TO-DO: search for brew packages or write install scripts for all Apps
 
 # Ask for the administrator password upfront
 sudo -v
