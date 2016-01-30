@@ -10,12 +10,14 @@ sudo -v
 # Xcode CLI tools
 xcode-select --install
 
-# -  Dropbox
-# Firefox
-# Google Chrome
-# iTerm
-# Keka
-# LittleSnitch
-# Sequel Pro
-# Sublime Text
-# Vlc
+# - Dropbox
+# - Firefox
+# - Google Chrome
+# - Filezilla
+# - iTerm 2
+# - Keka
+# - LittleSnitch
+# - Sequel Pro
+# - Sublime Text
+# - VLC
+# - Cdto
