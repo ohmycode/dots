@@ -21,3 +21,6 @@ xcode-select --install
 # - Sublime Text
 # - VLC
 # - Cdto
+
+# Install YADR - https://github.com/skwp/dotfiles
+sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
