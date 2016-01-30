@@ -67,22 +67,20 @@ transmission \
 keka \
 filezilla \ 
 dropbox \
+spectacle \
 cd-to \
 spotify
 
 # Web dev
 brew install \
-dnsmasq \
 mariadb 
 
 npm install -g \
 bower \
 gulp
 
-
-# Virtual box config auto config
-# brew cask install \
-# vagrant \ 
+# install meteor
+curl https://install.meteor.com/ | sh
 
 # Configuration for the installed Apps ---------------------
 
