@@ -16,12 +16,6 @@ xcode-select --install
 # install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# add Markdown support for Finder Preview (quicklook)
-brew cask install qlmarkdown
-
-#quicklook enable text selection
-defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
-
 # Install YADR - https://github.com/skwp/dotfiles
 sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
 
@@ -70,6 +64,13 @@ dropbox \
 spectacle \
 cd-to \
 spotify
+
+# install Finder Preview (quicklook) enhancements
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+
+#quicklook enable text selection
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
+
 
 # Web dev
 brew install \
