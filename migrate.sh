@@ -1,15 +1,15 @@
 #!/bin/bash
-echo -e '#!/bin/bash\n' > import.sh
+echo '#!/bin/bash\n' > import.sh
 
-echo -e '########### Brew Install List ###########' >> import.sh
+echo '########### Brew Install List ###########' >> import.sh
 brew leaves | sed 's/^/brew install /' >> import.sh &&
 
-echo -e '\n########### Brew Cask Install List ###########' >> import.sh &&
-brew cask list | sed 's/^/brew cask install /' >> import.sh &&
+echo '\n########### Brew Cask Install List ###########' >> import.sh &&
+brew list --cask | sed 's/^/brew cask install /' >> import.sh &&
 
-echo -e '\n########### Mac App Store Install List ###########' >> list.sh &&
+echo '\n########### Mac App Store Install List ###########' >> import.sh &&
 mas list | sed 's/\ /\ \ #\ /' | sed 's/^/mas install /' >> import.sh
 
-echo -e '\necho "And done..."' >> import.sh
+echo '\necho "finished installing items of import.sh"' >> import.sh
 
-echo "And done..."
+echo "Created file 'import.sh' successfully. Run it on new machine."
